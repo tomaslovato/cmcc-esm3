@@ -28,115 +28,38 @@
 
 [submodule "ccs_config"]
         path = ccs_config
-        url = https://github.com/ESMCI/ccs_config_cesm.git
+        url = https://github.com/CMCC-Foundation/ccs_config_cmcc
         fxDONOTUSEurl = https://github.com/ESMCI/ccs_config_cesm.git
-        fxtag = ccs_config_cesm1.0.63
+        fxtag = dbada106
         fxrequired = ToplevelRequired
 
 [submodule "cime"]
         path = cime
-        url = https://github.com/ESMCI/cime
+        url = https://github.com/CMCC-Foundation/cime
         fxDONOTUSEurl = https://github.com/ESMCI/cime
-	fxtag = cime6.1.135
+	fxtag = a1fe333a
         fxrequired = ToplevelRequired
-
-[submodule "fms"]
-        path = libraries/FMS
-        url = https://github.com/ESCOMP/FMS_interface
-        fxDONOTUSEurl = https://github.com/ESCOMP/FMS_interface
-        fxrequired = ToplevelRequired
-        fxtag = fi_250428
 
 [submodule "share"]
         path = share
-        url = https://github.com/ESCOMP/CESM_share
+        url = https://github.com/CMCC-Foundation/CMCC_share
         fxDONOTUSEurl = https://github.com/ESCOMP/CESM_share
-        fxtag = share1.1.9
+        fxtag = b2fa120301
         fxrequired = ToplevelRequired
 
-[submodule "cam"]
-        path = components/cam
-        url = https://www.github.com/ESCOMP/CAM
-        fxDONOTUSEurl = https://www.github.com/ESCOMP/CAM
-        fxtag = cam6_4_126
-        fxrequired = ToplevelRequired
+#[submodule "fms"]
+#        path = libraries/FMS
+#        url = https://github.com/ESCOMP/FMS_interface
+#        fxDONOTUSEurl = https://github.com/ESCOMP/FMS_interface
+#        fxrequired = ToplevelRequired
+#        fxtag = fi_250428
 
-[submodule "clm"]
-        path = components/clm
-        url = https://github.com/ESCOMP/CTSM
-        fxDONOTUSEurl = https://github.com/ESCOMP/CTSM
-        fxrequired = ToplevelRequired
-        fxtag = alpha-ctsm5.4.CMIP7.09.ctsm5.3.068
-
-[submodule "cice"]
-        path = components/cice
-        url = https://github.com/ESCOMP/CESM_CICE
-        fxDONOTUSEurl = https://github.com/ESCOMP/CESM_CICE
-        fxrequired = ToplevelRequired
-        fxtag = cesm3_cice6_6_1_6
-
-[submodule "mom"]
-        path = components/mom
-        url = https://github.com/ESCOMP/MOM_interface
-        fxDONOTUSEurl = https://github.com/ESCOMP/MOM_interface
-        fxrequired = ToplevelRequired
-        fxtag = mi_251024b
-
-[submodule "cism"]
-        path = components/cism
-        url = https://github.com/ESCOMP/cism-wrapper.git
-        fxDONOTUSEurl = https://github.com/ESCOMP/cism-wrapper.git
-        fxtag = cismwrap_2_2_011
-        fxrequired = ToplevelRequired
-
-[submodule "cdeps"]
-        path = components/cdeps
-        url = https://github.com/ESCOMP/CDEPS
-        fxDONOTUSEurl = https://github.com/ESCOMP/CDEPS
-        fxrequired = ToplevelRequired
-        fxtag = cdeps1.0.82
-
-[submodule "cmeps"]
-        path = components/cmeps
-        url = https://github.com/ESCOMP/CMEPS.git
-        fxDONOTUSEurl = https://github.com/ESCOMP/CMEPS.git
-        fxrequired = ToplevelRequired
-	fxtag = cmeps1.1.23
-
-[submodule "rtm"]
-        path = components/rtm
-        url = https://github.com/ESCOMP/RTM
-        fxDONOTUSEurl = https://github.com/ESCOMP/RTM
-        fxrequired = ToplevelRequired
-        fxtag = rtm1_0_89
-
-[submodule "ww3"]
-        path = components/ww3
-        url = https://github.com/ESCOMP/WW3_interface
-        fxDONOTUSEurl = https://github.com/ESCOMP/WW3_interface
-        fxtag = main_0.0.18
-        fxrequired = ToplevelRequired
-
-[submodule "mizuroute"]
-        path = components/mizuroute
-        url = https://github.com/ESCOMP/mizuRoute
-        fxDONOTUSEurl = https://github.com/ESCOMP/mizuRoute
-        fxrequired = ToplevelRequired
-        fxtag = v3.0.0
-
-[submodule "mosart"]
-        path = components/mosart
-        url = https://github.com/ESCOMP/MOSART
-        fxDONOTUSEurl = https://github.com/ESCOMP/MOSART
-        fxrequired = ToplevelRequired
-        fxtag = mosart1.1.12
-
-[submodule "parallelio"]
-        path = libraries/parallelio
-        url = https://github.com/NCAR/ParallelIO
-        fxDONOTUSEurl = https://github.com/NCAR/ParallelIO
-        fxrequired = ToplevelRequired
-        fxtag = pio2_6_6
+#[submodule "FTorch"]
+#        path = libraries/FTorch
+#        url = https://github.com/ESCOMP/FTorch_interface
+#        fxtag = v0.0.5
+#        fxrequired = ToplevelOptional
+#        fxDONOTUSEurl = https://github.com/ESCOMP/FTorch_interface
 
 [submodule "mpi-serial"]
         path = libraries/mpi-serial
@@ -145,23 +68,114 @@
         fxtag = MPIserial_2.5.4
         fxrequired = ToplevelRequired
 
-[submodule "pysect"]
-        path = tools/statistical_ensemble_test/pyCECT
-        url = https://github.com/NCAR/PyCECT
-        fxDONOTUSEurl = https://github.com/NCAR/PyCECT
+[submodule "parallelio"]
+        path = libraries/parallelio
+        url = https://github.com/NCAR/ParallelIO
+        fxDONOTUSEurl = https://github.com/NCAR/ParallelIO
         fxrequired = ToplevelRequired
-        fxtag = 3.2.2
+        fxtag = pio2_5_9
 
-[submodule "tools/CUPiD"]
-        path = tools/CUPiD
-        url = https://github.com/NCAR/CUPiD.git
-        fxDONOTUSEurl = https://github.com/NCAR/CUPiD.git
+[submodule "cam"]
+        path = components/cam
+        url = https://github.com/CMCC-Foundation/CAM
+        fxDONOTUSEurl = https://www.github.com/ESCOMP/CAM
+        fxtag = cb74223c25
         fxrequired = ToplevelRequired
-        fxtag = v0.3.1
 
-[submodule "FTorch"]
-	path = libraries/FTorch
-	url = https://github.com/ESCOMP/FTorch_interface
-  fxtag = v0.0.5
-  fxrequired = ToplevelOptional
-  fxDONOTUSEurl = https://github.com/ESCOMP/FTorch_interface
+[submodule "clm"]
+        path = components/clm
+        url = https://github.com/CMCC-Foundation/CTSM
+        fxDONOTUSEurl = https://github.com/ESCOMP/CTSM
+        fxrequired = ToplevelRequired
+        fxtag = fc0fcefcc
+
+[submodule "cice"]
+        path = components/cice
+        url = https://github.com/CMCC-Foundation/CICE-CM
+        fxDONOTUSEurl = https://github.com/ESCOMP/CESM_CICE
+        fxrequired = ToplevelRequired
+        fxtag = 7f0f6283848269
+
+[submodule "nemo"]
+	path = components/nemo
+	url = https://github.com/CMCC-Foundation/NEMO-cime
+        fxDONOTUSEurl = https://github.com/CMCC-Foundation/NEMO-cime
+        fxrequired = ToplevelRequired
+        fxtag = 781ab7c56
+
+[submodule "hydros"]
+	path = components/hydros
+	url = https://github.com/CMCC-Foundation/hydros-cm
+        fxDONOTUSEurl = https://github.com/CMCC-Foundation/hydros-cm
+        fxrequired = ToplevelRequired
+        fxtag = hydros_cm3_v02
+
+#[submodule "mom"]
+#        path = components/mom
+#        url = https://github.com/ESCOMP/MOM_interface
+#        fxDONOTUSEurl = https://github.com/ESCOMP/MOM_interface
+#        fxrequired = AlwaysOptional
+#        fxtag = mi_251024b
+
+#[submodule "cism"]
+#        path = components/cism
+#        url = https://github.com/ESCOMP/cism-wrapper.git
+#        fxDONOTUSEurl = https://github.com/ESCOMP/cism-wrapper.git
+#        fxtag = cismwrap_2_2_011
+#        fxrequired = AlwaysOptional
+
+[submodule "cdeps"]
+        path = components/cdeps
+        url = https://github.com/CMCC-Foundation/CDEPS
+        fxDONOTUSEurl = https://github.com/ESCOMP/CDEPS
+        fxrequired = ToplevelRequired
+        fxtag = a5f4aadf35
+
+[submodule "cmeps"]
+        path = components/cmeps
+        url =  https://github.com/CMCC-Foundation/CMEPS
+        fxDONOTUSEurl = https://github.com/ESCOMP/CMEPS.git
+        fxrequired = ToplevelRequired
+	fxtag = 99ab73af021d
+
+#[submodule "rtm"]
+#        path = components/rtm
+#        url = https://github.com/CMCC-Foundation/RTM
+#        fxDONOTUSEurl = https://github.com/ESCOMP/RTM
+#        fxrequired = AlwaysOptional
+#        fxtag = rtm1_0_78_cm3_v0
+
+#[submodule "ww3"]
+#        path = components/ww3
+#        url = https://github.com/CMCC-Foundation/WW3_interface
+#        fxDONOTUSEurl = https://github.com/ESCOMP/WW3_interface
+#        fxtag = ww3_interface_nor10_cm3_v02
+#        fxrequired = ToplevelOptional
+
+#[submodule "mizuroute"]
+#        path = components/mizuroute
+#        url = https://github.com/ESCOMP/mizuRoute
+#        fxDONOTUSEurl = https://github.com/ESCOMP/mizuRoute
+#        fxrequired = AlwaysOptional
+#        fxtag = v3.0.0
+
+#[submodule "mosart"]
+#        path = components/mosart
+#        url = https://github.com/CMCC-Foundation/MOSART
+#        fxDONOTUSEurl = https://github.com/ESCOMP/MOSART
+#        fxrequired = AlwaysOptional
+#        fxtag = mosart1_0_47_cm3_v1
+
+#[submodule "tools/pysect"]
+#        path = tools/statistical_ensemble_test/pyCECT
+#        url = https://github.com/NCAR/PyCECT
+#        fxDONOTUSEurl = https://github.com/NCAR/PyCECT
+#        fxrequired = AlwaysOptional
+#        fxtag = 3.2.2
+
+#[submodule "tools/CUPiD"]
+#        path = tools/CUPiD
+#        url = https://github.com/NCAR/CUPiD.git
+#        fxDONOTUSEurl = https://github.com/NCAR/CUPiD.git
+#        fxrequired = AlwaysOptional
+#        fxtag = v0.3.1
